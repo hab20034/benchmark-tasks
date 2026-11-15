@@ -1,0 +1,19 @@
+{
+  "format_version": "1.0",
+  "package_id": "simready.hf.nvidia.simready-assets.testingTool_multimeter_digital_b01.2026.10.09_175840078175",
+  "license": "CC-BY-4.0",
+  "metadata": [
+    {
+      "name": "com.nvidia.simready.packaging.bom.json",
+      "hash": {
+        "sha256": "bfe14b0ba107d59cc18f1b26dbfd509f34bb5833f4f30dc4da8322ba4819107f"
+      }
+    }
+  ],
+  "content_hash": {
+    "sha256": "1276bfa8ab80123a1e2ea2e281d3b2478376945f49f94bcda46edde7c1e50de8"
+  },
+  "package_hash": {
+    "sha256": "9383e559bb2944d07c701ee0d3d3d1af4e82a0fa6a8ca68b835f541ffdcfd50b"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "recordings": {
+    "demo": {
+      "recording": "demo.mp4",
+      "frames": 353,
+      "fps": 20,
+      "recorded_actions": 352,
+      "video_seconds": 17.65,
+      "wall_seconds": 41.59344128402881,
+      "base_seed": 0,
+      "reset_seed": 1415158438,
+      "environment_revision": "74a9b5db9e7f",
+      "status": "success",
+      "reported_metrics": {
+        "task_score": 1.0
+      }
+    },
+    "model_run": {
+      "recording": "model_run.mp4",
+      "frames": 1015,
+      "fps": 20,
+      "recorded_actions": 1014,
+      "video_seconds": 50.75,
+      "wall_seconds": 108.88748918299098,
+      "base_seed": 0,
+      "reset_seed": 1415158438,
+      "environment_revision": "74a9b5db9e7f",
+      "status": "cancelled",
+      "reported_metrics": {}
+    }
+  },
+  "dream_endpoint_replay": {
+    "status": "recorded_action_replay",
+    "original_run_status": "cancelled",
+    "recorded_steps": 1014,
+    "replayed_steps": 1014,
+    "task_score": 3.653309948503014e-10,
+    "score_explanation": "no success; partial credit 3.65331e-10",
+    "dial_degrees": 4.422427832398386e-08,
+    "base_seed": 0,
+    "reset_seed": 1415158438,
+    "environment_revision": "74a9b5db9e7f",
+    "replay_wall_seconds": 82.66468867694493,
+    "note": "Post-hoc score of a manually interrupted existing Dream run, replaying the recorded applied actions; not a completed original evaluation."
+  },
+  "scoring_correction": "Partial credit is now capped at 0.95; full score requires the native two-second success termination. The recorded scripted demo satisfied that termination.",
+  "media_upload_status": "not uploaded; task.json media must be filled by tools/upload_media.py",
+  "duplicate_check": "Public GitHub PR search found two closed multimeter tasks with different objectives. Signed-in task-board check remains unverified."
+}

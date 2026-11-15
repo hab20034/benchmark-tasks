@@ -1,0 +1,497 @@
+#usda 1.0
+(
+    defaultPrim = "Multimeter"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "Multimeter" (
+    delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+    prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+    prepend references = @testingTool_multimeter_digital_b01/simready_usd/sm_testingTool_multimeter_digital_b01_01.usd@
+)
+{
+    float physics:mass = 0.3
+    bool physics:rigidBodyEnabled = 1
+
+    over "Geometry" (
+        delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+    )
+    {
+        over "cables_01_obj_00" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            instanceable = false
+        )
+        {
+            over "cables_01_mesh_00" (
+                delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+            )
+            {
+                uniform token physics:approximation = "convexHull"
+                bool physics:collisionEnabled = 1
+
+                over "m_opaque__plastic__testingTool_multimeter_b01" (
+                    delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                }
+
+                over "m_opaque__metal__testingTool_multimeter_b01" (
+                    delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                }
+            }
+
+            over "VisualMaterials" (
+                delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            )
+            {
+                over "m_opaque__plastic__testingTool_multimeter_b01" (
+                    delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                }
+
+                over "m_opaque__metal__testingTool_multimeter_b01" (
+                    delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                }
+            }
+        }
+
+        over "button_04_obj_00" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            instanceable = false
+        )
+        {
+            over "button_04_mesh_00" (
+                delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+            )
+            {
+                uniform token physics:approximation = "convexHull"
+                bool physics:collisionEnabled = 1
+            }
+
+            over "VisualMaterials" (
+                delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            )
+            {
+                over "m_opaque__plastic__testingTool_multimeter_b01" (
+                    delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                }
+            }
+        }
+
+        over "button_01_obj_00" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            instanceable = false
+        )
+        {
+            over "button_01_mesh_00" (
+                delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+            )
+            {
+                uniform token physics:approximation = "convexHull"
+                bool physics:collisionEnabled = 1
+            }
+
+            over "VisualMaterials" (
+                delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            )
+            {
+                over "m_opaque__plastic__testingTool_multimeter_b01" (
+                    delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                }
+            }
+        }
+
+        over "cap_01_obj_00" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            instanceable = false
+        )
+        {
+            over "cap_01_mesh_00" (
+                delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+            )
+            {
+                uniform token physics:approximation = "convexHull"
+                bool physics:collisionEnabled = 1
+            }
+
+            over "VisualMaterials" (
+                delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            )
+            {
+                over "m_opaque__plastic__testingTool_multimeter_b01" (
+                    delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                }
+            }
+        }
+
+        over "clip_01_obj_00" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            instanceable = false
+        )
+        {
+            over "clip_01_mesh_00" (
+                delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+            )
+            {
+                uniform token physics:approximation = "convexHull"
+                bool physics:collisionEnabled = 1
+            }
+
+            over "VisualMaterials" (
+                delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            )
+            {
+                over "m_opaque__plastic__testingTool_multimeter_b01" (
+                    delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                }
+            }
+        }
+
+        over "screen_01_obj_00" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            instanceable = false
+        )
+        {
+            over "screen_01_mesh_00" (
+                delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+            )
+            {
+                uniform token physics:approximation = "convexHull"
+                bool physics:collisionEnabled = 1
+            }
+
+            over "VisualMaterials" (
+                delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            )
+            {
+                over "m_trans__plastic__clean_a01" (
+                    delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                }
+            }
+        }
+
+        over "button_02_obj_00" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            instanceable = false
+        )
+        {
+            over "button_02_mesh_00" (
+                delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+            )
+            {
+                uniform token physics:approximation = "convexHull"
+                bool physics:collisionEnabled = 1
+            }
+
+            over "VisualMaterials" (
+                delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            )
+            {
+                over "m_opaque__plastic__testingTool_multimeter_b01" (
+                    delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                }
+            }
+        }
+
+        over "cap_02_obj_00" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            instanceable = false
+        )
+        {
+            over "cap_02_mesh_00" (
+                delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+            )
+            {
+                uniform token physics:approximation = "convexHull"
+                bool physics:collisionEnabled = 1
+            }
+
+            over "VisualMaterials" (
+                delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            )
+            {
+                over "m_opaque__plastic__testingTool_multimeter_b01" (
+                    delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                }
+            }
+        }
+
+        over "body_01_obj_00" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            instanceable = false
+        )
+        {
+            over "body_01_mesh_00" (
+                delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+            )
+            {
+                uniform token physics:approximation = "convexHull"
+                bool physics:collisionEnabled = 1
+
+                over "m_opaque__plastic__testingTool_multimeter_b01" (
+                    delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                }
+
+                over "m_opaque__metal__testingTool_multimeter_b01" (
+                    delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                }
+            }
+
+            over "VisualMaterials" (
+                delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            )
+            {
+                over "m_opaque__plastic__testingTool_multimeter_b01" (
+                    delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                }
+
+                over "m_opaque__metal__testingTool_multimeter_b01" (
+                    delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                }
+            }
+        }
+
+        over "knob_01_obj_00" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            instanceable = false
+        )
+        {
+            over "knob_01_mesh_00" (
+                delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+            )
+            {
+                uniform token physics:approximation = "convexHull"
+                bool physics:collisionEnabled = 1
+            }
+
+            over "VisualMaterials" (
+                delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            )
+            {
+                over "m_opaque__plastic__testingTool_multimeter_b01" (
+                    delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                }
+            }
+        }
+
+        over "button_03_obj_00" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            instanceable = false
+        )
+        {
+            over "button_03_mesh_00" (
+                delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+            )
+            {
+                uniform token physics:approximation = "convexHull"
+                bool physics:collisionEnabled = 1
+            }
+
+            over "VisualMaterials" (
+                delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            )
+            {
+                over "m_opaque__plastic__testingTool_multimeter_b01" (
+                    delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                }
+            }
+        }
+    }
+
+    over "PhysicsMaterials" (
+        delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+    )
+    {
+        over "physics_mat_m_opaque__plastic__testingTool_multimeter_b01" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+        }
+
+        over "physics_mat_m_opaque__metal__testingTool_multimeter_b01" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+        }
+
+        over "physics_mat_m_trans__plastic__clean_a01" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+        }
+    }
+
+    over "Joints" (
+        delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+    )
+    {
+        over "joint_button_01_joint_00" (
+            active = false
+        )
+        {
+        }
+
+        over "joint_button_04_joint_00" (
+            active = false
+        )
+        {
+        }
+
+        over "joint_button_02_joint_00" (
+            active = false
+        )
+        {
+        }
+
+        over "joint_button_03_joint_00" (
+            active = false
+        )
+        {
+        }
+
+        over "joint_knob_01_joint_00" (
+            active = false
+        )
+        {
+        }
+
+        over "joint_screen_01_joint_00" (
+            active = false
+        )
+        {
+        }
+    }
+
+    over "Materials" (
+        delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+    )
+    {
+    }
+
+    over "ReferencePrims" (
+        delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+    )
+    {
+        over "button_01_joint_00" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+        }
+
+        over "button_04_joint_00" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+        }
+
+        over "body_01_joint_00" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+        }
+
+        over "Empty_joint_00" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+        }
+
+        over "button_02_joint_00" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+        }
+
+        over "Empty_joint_01" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+        }
+
+        over "button_03_joint_00" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+        }
+
+        over "screen_01_joint_00" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+        }
+
+        over "Empty_joint_02" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+        }
+
+        over "knob_01_joint_00" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+        }
+
+        over "Empty_joint_03" (
+            delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+        }
+    }
+
+    over "Grasp" (
+        delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+    )
+    {
+    }
+
+    over "VisualMaterials" (
+        delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+    )
+    {
+    }
+}
+

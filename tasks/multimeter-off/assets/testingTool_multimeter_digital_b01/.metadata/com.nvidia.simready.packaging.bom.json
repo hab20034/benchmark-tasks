@@ -1,0 +1,306 @@
+{
+  "format_version": "1.0",
+  "items": [
+    {
+      "relative_path": "simready_usd/sm_testingTool_multimeter_digital_b01_01.usd",
+      "size": 21355,
+      "hash": {
+        "sha256": "edde85fd18145c901bb92b1b3469669ac3520eeda2f231cdd116e6e0cd9c32e4"
+      }
+    },
+    {
+      "relative_path": "simready_usd/.thumbs/sm_testingTool_multimeter_digital_b01_01_thumbnail.png",
+      "size": 560540,
+      "hash": {
+        "sha256": "0b662455bb3f324f3f5b670ca5a4089987d0eecf801fc7cfc761c7502e8d9341"
+      }
+    },
+    {
+      "relative_path": "simready_usd/.thumbs/256x256/sm_testingTool_multimeter_digital_b01_01.usd.png",
+      "size": 864076,
+      "hash": {
+        "sha256": "ab094148fc14cd1f90ce2111a4d8458e8b1bc7d9f49de3a9e94548a40b8e4707"
+      }
+    },
+    {
+      "relative_path": "simready_usd/.thumbs/256x256/sm_testingTool_multimeter_digital_b01_01.usd_light.png",
+      "size": 497349,
+      "hash": {
+        "sha256": "a18766d57f3c521a169cffdd9d658b63adb6dde10287d1503cadcc7a977e6e52"
+      }
+    },
+    {
+      "relative_path": "simready_usd/.thumbs/256x256/sm_testingTool_multimeter_digital_b01_01.usd_transparent.png",
+      "size": 326635,
+      "hash": {
+        "sha256": "c3868421d3024e79344e8598c840e82250d7154483139a05e47f7fe08c7dc0ff"
+      }
+    },
+    {
+      "relative_path": "simready_usd/Textures/t_testingTool_multimeter_b01_alb.png",
+      "size": 19931914,
+      "hash": {
+        "sha256": "276fd7e1108f5be82209d7f7640e6447f63d4cbcccb458068d1be4a3188a2756",
+        "sha256-first1m": "77902dd5c49632e803d8c0c54163c7a3a2611f57642785e231ac33ed00f0ee9f"
+      }
+    },
+    {
+      "relative_path": "simready_usd/Textures/t_testingTool_multimeter_b01_orm.png",
+      "size": 19424140,
+      "hash": {
+        "sha256": "70ac1d51c9cae2a17179aa7a95bf5be59c408aa8e8f037e6125ca25dc89fb146",
+        "sha256-first1m": "6a5333c7adb256e069c89349fb423acf0cc72869590d7c8ca17e0cf89ef8b366"
+      }
+    },
+    {
+      "relative_path": "simready_usd/Textures/t_testingTool_multimeter_b01_nor.png",
+      "size": 22224003,
+      "hash": {
+        "sha256": "e7c1420749f262c83337e06c5e2e0343f709fbaec0959f05f5696a86d6f146c9",
+        "sha256-first1m": "58a24b290e0e047031e52a9052b47e79f3fd669a43403ce75210869d6544a05b"
+      }
+    },
+    {
+      "relative_path": "simready_usd/Textures/.thumbs/256x256/t_testingTool_multimeter_b01_alb.png.png",
+      "size": 88726,
+      "hash": {
+        "sha256": "20f0eb945e25b7016c79d18e53e04451481f5123e8f0fff412509381a91d8f58"
+      }
+    },
+    {
+      "relative_path": "simready_usd/Textures/.thumbs/256x256/t_testingTool_multimeter_b01_nor.png.png",
+      "size": 63845,
+      "hash": {
+        "sha256": "ea9a492b63846ec5a604bc5224db5827a0d8d6b25b3d38568348b1085d8aa3cf"
+      }
+    },
+    {
+      "relative_path": "simready_usd/Textures/.thumbs/256x256/t_testingTool_multimeter_b01_orm.png.png",
+      "size": 92959,
+      "hash": {
+        "sha256": "e1286ac4c9d83049fcdc92ed7caca1850218d86625be0d8da3a817b0e87cc01d"
+      }
+    },
+    {
+      "relative_path": "simready_usd/Textures/.thumbs/512x512/t_testingTool_multimeter_b01_alb.png.png",
+      "size": 328792,
+      "hash": {
+        "sha256": "0d13c9a75b9018ba360dfeb6be1b4e9ea46ab4f9f6605fedddddbcf95d32af80"
+      }
+    },
+    {
+      "relative_path": "simready_usd/Textures/.thumbs/512x512/t_testingTool_multimeter_b01_nor.png.png",
+      "size": 246251,
+      "hash": {
+        "sha256": "779e7ded5bfdabb6a4f8736fa628082e4a66d86712e2575c272a7e2a9a82e1a8"
+      }
+    },
+    {
+      "relative_path": "simready_usd/Textures/.thumbs/512x512/t_testingTool_multimeter_b01_orm.png.png",
+      "size": 341989,
+      "hash": {
+        "sha256": "e4dd22a52ff0d1e34836c6a65b2f7ca2e02db4f5ce9695e7cba61a1686ef0caf"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/base.usda",
+      "size": 33498,
+      "hash": {
+        "sha256": "143bba02989de447f8a2b2c63380c8acdd41fab1b31c15cbcef9b54b5269d798"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/geometries.usd",
+      "size": 6863787,
+      "hash": {
+        "sha256": "a33b221144701d7c9b944e291da95a307abc1f132df288c609e06cb4861df33a",
+        "sha256-first1m": "94f40515e059c9d6b1e8dc30fa05a5d2012f3d5a414ff7c8b87c1e57d3719467"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/instances.usda",
+      "size": 20118,
+      "hash": {
+        "sha256": "1a2fda84c34a2263f7f66375f3877bec4f477bb813ed86771bbc6e41583e9e12"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/instances_mujoco.usda",
+      "size": 23110,
+      "hash": {
+        "sha256": "48407d091ce0096e58c2e92ebadc99e73ca19d903ef53653304079f3dfc99c96"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/instances_newton.usda",
+      "size": 21471,
+      "hash": {
+        "sha256": "847cbd46227402f34d97209e9c52968a9a71629e2bf03c4e5918c50b87c0019d"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/instances_physx.usda",
+      "size": 22342,
+      "hash": {
+        "sha256": "000c0fe2c59d972e88f1076e84d914aca821e8ab2802add1e54163def1d6be19"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/materials.usda",
+      "size": 21028,
+      "hash": {
+        "sha256": "d4a7e37a9aad6a96890ffedd380e8cfc1a788c5b094bbf31c6d1330818deba90"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/MuJoCo/enabled.usda",
+      "size": 10598,
+      "hash": {
+        "sha256": "2bf9829a0c5a63315cdfc39df1c6367082139f8d4fff75a5a195775ce02ef4ec"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/MuJoCo/disabled.usda",
+      "size": 6608,
+      "hash": {
+        "sha256": "2ca0eae2792546ba212b0e9a5693aa1ce39c2752c42c6acab5d84505ce0c5738"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/Newton/disabled.usda",
+      "size": 6608,
+      "hash": {
+        "sha256": "2ca0eae2792546ba212b0e9a5693aa1ce39c2752c42c6acab5d84505ce0c5738"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/Newton/enabled.usda",
+      "size": 9469,
+      "hash": {
+        "sha256": "57dfae65d2617227fb86ca2fa52e614a2eff2b59e2ac214ec4beff3ef5c56141"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/PhysX/disabled.usda",
+      "size": 6608,
+      "hash": {
+        "sha256": "2ca0eae2792546ba212b0e9a5693aa1ce39c2752c42c6acab5d84505ce0c5738"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/PhysX/enabled.usda",
+      "size": 8651,
+      "hash": {
+        "sha256": "5a20d8336bfc642d75f4db390a291f7c74fcfdc5c7eea5fbcaeb50e804284abb"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/Physics/physics.usda",
+      "size": 16748,
+      "hash": {
+        "sha256": "fb19d63fbf8be3ed796def59d24b06565d4fb04b93e9021e1546f571e05e3095"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/OmniGlass.mdl",
+      "size": 10205,
+      "hash": {
+        "sha256": "31a93eda2387572db4930a8b22f51e100716809e859505c97b82a17ac43d1e30"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/OmniGlass_Opacity.mdl",
+      "size": 17706,
+      "hash": {
+        "sha256": "b6110a46bb9e8cd94f20cf7d78992f6f81cd5546bbab277cf950256faae80261"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/OmniPBR.mdl",
+      "size": 16010,
+      "hash": {
+        "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/OmniPBRBase.mdl",
+      "size": 19369,
+      "hash": {
+        "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/OmniPBR_ClearCoat.mdl",
+      "size": 29789,
+      "hash": {
+        "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/t_testingTool_multimeter_b01_alb.png",
+      "size": 19931914,
+      "hash": {
+        "sha256": "276fd7e1108f5be82209d7f7640e6447f63d4cbcccb458068d1be4a3188a2756",
+        "sha256-first1m": "77902dd5c49632e803d8c0c54163c7a3a2611f57642785e231ac33ed00f0ee9f"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/t_testingTool_multimeter_b01_nor.png",
+      "size": 22224003,
+      "hash": {
+        "sha256": "e7c1420749f262c83337e06c5e2e0343f709fbaec0959f05f5696a86d6f146c9",
+        "sha256-first1m": "58a24b290e0e047031e52a9052b47e79f3fd669a43403ce75210869d6544a05b"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/t_testingTool_multimeter_b01_orm.png",
+      "size": 19424140,
+      "hash": {
+        "sha256": "70ac1d51c9cae2a17179aa7a95bf5be59c408aa8e8f037e6125ca25dc89fb146",
+        "sha256-first1m": "6a5333c7adb256e069c89349fb423acf0cc72869590d7c8ca17e0cf89ef8b366"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/.thumbs/256x256/t_testingTool_multimeter_b01_alb.png.png",
+      "size": 88726,
+      "hash": {
+        "sha256": "20f0eb945e25b7016c79d18e53e04451481f5123e8f0fff412509381a91d8f58"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/.thumbs/256x256/t_testingTool_multimeter_b01_nor.png.png",
+      "size": 63845,
+      "hash": {
+        "sha256": "ea9a492b63846ec5a604bc5224db5827a0d8d6b25b3d38568348b1085d8aa3cf"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/.thumbs/256x256/t_testingTool_multimeter_b01_orm.png.png",
+      "size": 92959,
+      "hash": {
+        "sha256": "e1286ac4c9d83049fcdc92ed7caca1850218d86625be0d8da3a817b0e87cc01d"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/.thumbs/512x512/t_testingTool_multimeter_b01_alb.png.png",
+      "size": 328792,
+      "hash": {
+        "sha256": "0d13c9a75b9018ba360dfeb6be1b4e9ea46ab4f9f6605fedddddbcf95d32af80"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/.thumbs/512x512/t_testingTool_multimeter_b01_nor.png.png",
+      "size": 246251,
+      "hash": {
+        "sha256": "779e7ded5bfdabb6a4f8736fa628082e4a66d86712e2575c272a7e2a9a82e1a8"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/.thumbs/512x512/t_testingTool_multimeter_b01_orm.png.png",
+      "size": 341989,
+      "hash": {
+        "sha256": "e4dd22a52ff0d1e34836c6a65b2f7ca2e02db4f5ce9695e7cba61a1686ef0caf"
+      }
+    }
+  ]
+}

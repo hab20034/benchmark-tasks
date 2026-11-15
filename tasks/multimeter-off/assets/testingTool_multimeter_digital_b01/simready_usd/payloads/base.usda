@@ -1,0 +1,643 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary SimReady_Metadata = {
+            dictionary Variants = {
+                dictionary Physics = {
+                    dictionary MuJoCo = {
+                        string activateOption = "Enabled"
+                        string prim = "/RootNode"
+                        string variantSetName = "MuJoCo"
+                    }
+                    dictionary Newton = {
+                        string activateOption = "Enabled"
+                        string prim = "/RootNode"
+                        string variantSetName = "Newton"
+                    }
+                    dictionary PhysX = {
+                        string activateOption = "Enabled"
+                        string prim = "/RootNode"
+                        string variantSetName = "PhysX"
+                    }
+                }
+            }
+            string asset_location = "simready_content\\common_assets\\props_automotive_workshop_tools\\testingTool_multimeter_digital_b01\\simready_physx_usd\\sm_testingTool_multimeter_digital_b01_01.usd"
+            string asset_type = "prop"
+            dictionary validation = {
+                string profile = "Robotics-Prop"
+                string profile_version = "3.1.0"
+                dictionary validated_features = {
+                    dictionary "2026-06-26" = {
+                        dictionary FET000_CORE = {
+                            string dependencies = "[]"
+                            bool passed = 1
+                            string version = "0.1.0"
+                        }
+                        dictionary FET001_BASE_NEUTRAL = {
+                            string dependencies = "[]"
+                            string "failing requirements" = "['AA.001']"
+                            bool passed = 0
+                            string version = "0.1.0"
+                        }
+                        dictionary FET003_BASE_NEUTRAL = {
+                            string dependencies = "[]"
+                            bool passed = 1
+                            string version = "0.1.0"
+                        }
+                        dictionary FET003_BASE_PHYSX = {
+                            string dependencies = "[{'FET003_BASE_NEUTRAL': {'version': '0.1.0'}}]"
+                            bool passed = 1
+                            string version = "0.1.0"
+                        }
+                        dictionary FET004_BASE_NEUTRAL = {
+                            string dependencies = "[{'FET003_BASE_NEUTRAL': {'version': '0.1.0'}}]"
+                            bool passed = 1
+                            string version = "0.1.0"
+                        }
+                        dictionary FET004_BASE_PHYSX = {
+                            string dependencies = "[{'FET003_BASE_PHYSX': {'version': '0.1.0'}}, {'FET004_BASE_NEUTRAL': {'version': '0.1.0'}}]"
+                            bool passed = 1
+                            string version = "0.1.0"
+                        }
+                        dictionary FET005_BASE_NEUTRAL = {
+                            string dependencies = "[]"
+                            string "failing requirements" = "['GSP.001']"
+                            bool passed = 0
+                            string version = "0.1.0"
+                        }
+                        dictionary FET006_BASE_MDL = {
+                            string dependencies = "[]"
+                            string "failing requirements" = "['VM.MDL.001']"
+                            bool passed = 0
+                            string version = "0.1.0"
+                        }
+                    }
+                    dictionary "2026-06-29" = {
+                        dictionary FET000_CORE = {
+                            string dependencies = "[]"
+                            bool passed = 1
+                            string version = "0.1.0"
+                        }
+                        dictionary FET001_BASE_NEUTRAL = {
+                            string dependencies = "[]"
+                            string "failing requirements" = "['AA.001']"
+                            bool passed = 0
+                            string version = "0.1.0"
+                        }
+                        dictionary FET003_BASE_NEUTRAL = {
+                            string dependencies = "[]"
+                            bool passed = 1
+                            string version = "0.1.0"
+                        }
+                        dictionary FET003_BASE_PHYSX = {
+                            string dependencies = "[{'FET003_BASE_NEUTRAL': {'version': '0.1.0'}}]"
+                            bool passed = 1
+                            string version = "0.1.0"
+                        }
+                        dictionary FET004_BASE_NEUTRAL = {
+                            string dependencies = "[{'FET003_BASE_NEUTRAL': {'version': '0.1.0'}}]"
+                            bool passed = 1
+                            string version = "0.1.0"
+                        }
+                        dictionary FET004_BASE_PHYSX = {
+                            string dependencies = "[{'FET003_BASE_PHYSX': {'version': '0.1.0'}}, {'FET004_BASE_NEUTRAL': {'version': '0.1.0'}}]"
+                            bool passed = 1
+                            string version = "0.1.0"
+                        }
+                        dictionary FET005_BASE_NEUTRAL = {
+                            string dependencies = "[]"
+                            string "failing requirements" = "['GSP.001']"
+                            bool passed = 0
+                            string version = "0.1.0"
+                        }
+                        dictionary FET006_BASE_MDL = {
+                            string dependencies = "[]"
+                            string "failing requirements" = "['VM.MDL.001']"
+                            bool passed = 0
+                            string version = "0.1.0"
+                        }
+                    }
+                }
+            }
+        }
+        string asset_dir = "simready_content/common_assets/props_automotive_workshop_tools/testingTool_multimeter_digital_b01"
+        string asset_name = "testingTool_multimeter_digital_b01"
+        string asset_type = "prop"
+        string profile = "Prop-Robotics-Neutral"
+        string source_file = "../simready_usd/sm_testingTool_multimeter_digital_b01_01.usd"
+        string usd_date_generated = "2026-06-26 16:46:21"
+        bool used_dsrs_exporter = 1
+    }
+    defaultPrim = "RootNode"
+    metersPerUnit = 1
+    subLayers = [
+        @./Physics/physics.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "RootNode" (
+    prepend apiSchemas = ["SemanticsLabelsAPI:wikidata_class", "SemanticsLabelsAPI:wikidata_qcode"]
+    assetInfo = {
+        asset identifier = @../sm_testingTool_multimeter_digital_b01_01.usd@
+        string name = "sm_testingTool_multimeter_digital_b01_01"
+    }
+    customData = {
+        dictionary Blender = {
+            bool generated = 1
+        }
+        dictionary omni = {
+            dictionary cip = {
+                string timestamp = "2026-06-26 17:21:35"
+                string type = "prop"
+                dictionary validator = {
+                    string[] rules = []
+                    string version = "1.1.6"
+                }
+            }
+        }
+    }
+    kind = "component"
+)
+{
+    custom string omni:simready:documentation = "electronic measuring instrument that combines several measurement functions in one unit"
+    token[] semantics:labels:wikidata_class = ["multimeter"]
+    token[] semantics:labels:wikidata_qcode = ["Q189996"]
+
+    def Scope "Materials"
+    {
+    }
+
+    def Scope "Geometry"
+    {
+        def Xform "cables_01_obj_00" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            instanceable = true
+            prepend references = @./instances.usda@</Instances/cables_01_mesh_00>
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "cables_01_obj_00"
+            custom string currentUVSet = "map1"
+            custom rel material:binding:physics = </RootNode/PhysicsMaterials/physics_mat_m_opaque__plastic__testingTool_multimeter_b01>
+            custom double4 pxr:physics:principalAxes = (1, 0, 0, 0)
+            custom double3 pxr:usd:physics_centerofmass = (-0.010885204188525677, 0.016855182126164436, 0.0000048435244934808)
+            custom double3 pxr:usd:physics_inertia = (0.00012363486458767407, 0.00018855178210475405, 0.0003110561642333646)
+            custom double pxr:usd:physics_mass = 0.06726873847192416
+            quatd xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (-0.004540870432, -0.2325813919, 0.005951527506)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def Xform "button_04_obj_00" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            instanceable = true
+            prepend references = @./instances.usda@</Instances/button_04_mesh_00>
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "button_04_obj_00"
+            custom string currentUVSet = "map1"
+            custom rel material:binding:physics = </RootNode/PhysicsMaterials/physics_mat_m_opaque__plastic__testingTool_multimeter_b01>
+            custom double4 pxr:physics:principalAxes = (1, 0, 0, 0)
+            custom double3 pxr:usd:physics_centerofmass = (0.024250172078609467, 0.021478909999132156, 0.0366477444767952)
+            custom double3 pxr:usd:physics_inertia = (3.8318841781207125e-9, 2.6567351263804017e-9, 4.874168324674302e-9)
+            custom double pxr:usd:physics_mass = 0.0004121612293629084
+            quatd xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.02425016649, 0.02147890069, 0.03649000078)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def Xform "button_01_obj_00" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            instanceable = true
+            prepend references = @./instances.usda@</Instances/button_01_mesh_00>
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "button_01_obj_00"
+            custom string currentUVSet = "map1"
+            custom rel material:binding:physics = </RootNode/PhysicsMaterials/physics_mat_m_opaque__plastic__testingTool_multimeter_b01>
+            custom double4 pxr:physics:principalAxes = (1, 0, 0, 0)
+            custom double3 pxr:usd:physics_centerofmass = (0.024250159040093422, -0.02147996611893177, 0.0366477444767952)
+            custom double3 pxr:usd:physics_inertia = (3.831883146884236e-9, 2.656736236391932e-9, 4.874167138941999e-9)
+            custom double pxr:usd:physics_mass = 0.00041216132026725914
+            quatd xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.02425014786, -0.02147996984, 0.03649000078)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def Xform "cap_01_obj_00" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            instanceable = true
+            prepend references = @./instances.usda@</Instances/cap_01_mesh_00>
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "cap_01_obj_00"
+            custom string currentUVSet = "map1"
+            custom rel material:binding:physics = </RootNode/PhysicsMaterials/physics_mat_m_opaque__plastic__testingTool_multimeter_b01>
+            custom double4 pxr:physics:principalAxes = (1, 0, 0, 0)
+            custom double3 pxr:usd:physics_centerofmass = (0.0031261795666068792, -0.11697752773761749, 0.00626617344096303)
+            custom double3 pxr:usd:physics_inertia = (0.0010000000474974513, 0.0010000000474974513, 0.0010000000474974513)
+            custom double pxr:usd:physics_mass = 0.0045845295106180205
+            quatd xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.00279504736, -0.1166450679, 0.006511512678)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def Xform "clip_01_obj_00" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            instanceable = true
+            prepend references = @./instances.usda@</Instances/clip_01_mesh_00>
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "clip_01_obj_00"
+            custom string currentUVSet = "map1"
+            custom rel material:binding:physics = </RootNode/PhysicsMaterials/physics_mat_m_opaque__plastic__testingTool_multimeter_b01>
+            custom double4 pxr:physics:principalAxes = (1, 0, 0, 0)
+            custom double3 pxr:usd:physics_centerofmass = (-0.015268868766725063, -0.08153410255908966, 0.0056414417922496796)
+            custom double3 pxr:usd:physics_inertia = (0.0010000000474974513, 0.0010000000474974513, 0.0010000000474974513)
+            custom double pxr:usd:physics_mass = 0.05000000074505806
+            quatd xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (-0.002707004547, -0.08173456788, 0.006498388015)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def Xform "screen_01_obj_00" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            instanceable = true
+            prepend references = @./instances.usda@</Instances/screen_01_mesh_00>
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "screen_01_obj_00"
+            custom string currentUVSet = "map1"
+            custom rel material:binding:physics = </RootNode/PhysicsMaterials/physics_mat_m_trans__plastic__clean_a01>
+            custom double4 pxr:physics:principalAxes = (1, 0, 0, 0)
+            custom float3 pxr:usd:physics_centerofmass = (-0.06191348, -5.2776517e-7, 0.038359083)
+            custom double3 pxr:usd:physics_inertia = (0.000002319387205054838, 9.516187918129889e-8, 0.000002414467557249499)
+            custom double pxr:usd:physics_mass = 0.008515959028063645
+            custom int selection_order = 0
+            quatd xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (-0.0007291473448, -0.00034071962, -0.003740124404)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def Xform "button_02_obj_00" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            instanceable = true
+            prepend references = @./instances.usda@</Instances/button_02_mesh_00>
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "button_02_obj_00"
+            custom string currentUVSet = "map1"
+            custom rel material:binding:physics = </RootNode/PhysicsMaterials/physics_mat_m_opaque__plastic__testingTool_multimeter_b01>
+            custom double4 pxr:physics:principalAxes = (1, 0, 0, 0)
+            custom double3 pxr:usd:physics_centerofmass = (0.02425016462802887, -0.007096810266375542, 0.0366477444767952)
+            custom double3 pxr:usd:physics_inertia = (3.831882399227397e-9, 2.6567358150049136e-9, 4.874165926805942e-9)
+            custom double pxr:usd:physics_mass = 0.0004121612571141497
+            quatd xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.02425016463, -0.007096815854, 0.03649000078)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def Xform "cap_02_obj_00" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            instanceable = true
+            prepend references = @./instances.usda@</Instances/cap_02_mesh_00>
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "cap_02_obj_00"
+            custom string currentUVSet = "map1"
+            custom rel material:binding:physics = </RootNode/PhysicsMaterials/physics_mat_m_opaque__plastic__testingTool_multimeter_b01>
+            custom double4 pxr:physics:principalAxes = (1, 0, 0, 0)
+            custom double3 pxr:usd:physics_centerofmass = (0.0031261765398085117, -0.14432592689990997, 0.006250123959034681)
+            custom double3 pxr:usd:physics_inertia = (0.0010000000474974513, 0.0010000000474974513, 0.0010000000474974513)
+            custom double pxr:usd:physics_mass = 0.0045845296741694064
+            quatd xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.002795047825, -0.1439935267, 0.006495466921)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def Xform "body_01_obj_00" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            instanceable = true
+            prepend references = @./instances.usda@</Instances/body_01_mesh_00>
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "body_01_obj_00"
+            custom string currentUVSet = "map1"
+            custom rel material:binding:physics = </RootNode/PhysicsMaterials/physics_mat_m_opaque__plastic__testingTool_multimeter_b01>
+            custom double4 pxr:physics:principalAxes = (1, 0, 0, 0)
+            custom float3 pxr:usd:physics_centerofmass = (0.00030264744, 0.000003878291, 0.021367455)
+            custom double3 pxr:usd:physics_inertia = (0.00019031671749032288, 0.0008847676751329567, 0.0010281587264237074)
+            custom double pxr:usd:physics_mass = 0.24196666063631894
+        }
+
+        def Xform "knob_01_obj_00" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            instanceable = true
+            prepend references = @./instances.usda@</Instances/knob_01_mesh_00>
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "knob_01_obj_00"
+            custom string currentUVSet = "map1"
+            custom rel material:binding:physics = </RootNode/PhysicsMaterials/physics_mat_m_opaque__plastic__testingTool_multimeter_b01>
+            custom double4 pxr:physics:principalAxes = (1, 0, 0, 0)
+            custom double3 pxr:usd:physics_centerofmass = (-0.008475679904222488, -0.0014214575057849288, 0.03697799891233444)
+            custom double3 pxr:usd:physics_inertia = (0.000009999999747378752, 0.000009999999747378752, 0.000009999999747378752)
+            custom double pxr:usd:physics_mass = 0.00455900002270937
+            quatd xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (-0.00899158977, 0.000009714819498, 0.03652296215)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def Xform "button_03_obj_00" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            instanceable = true
+            prepend references = @./instances.usda@</Instances/button_03_mesh_00>
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "button_03_obj_00"
+            custom string currentUVSet = "map1"
+            custom rel material:binding:physics = </RootNode/PhysicsMaterials/physics_mat_m_opaque__plastic__testingTool_multimeter_b01>
+            custom double4 pxr:physics:principalAxes = (1, 0, 0, 0)
+            custom double3 pxr:usd:physics_centerofmass = (0.02425016649067402, 0.007095743902027607, 0.0366477444767952)
+            custom double3 pxr:usd:physics_inertia = (3.831882878543797e-9, 2.6567355574284912e-9, 4.874167184150161e-9)
+            custom double pxr:usd:physics_mass = 0.00041216132162404047
+            quatd xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.02425015159, 0.007095744368, 0.03649000078)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+    }
+
+    def Scope "ReferencePrims"
+    {
+        def Xform "button_01_joint_00" (
+            prepend apiSchemas = ["CollectionAPI:button_01_joint_00"]
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "button_01_joint_00"
+            rel collection:button_01_joint_00:includes = </RootNode/Geometry/button_01_obj_00>
+            custom float3 jw_translation_default = (0.024250148, -0.02147997, 0.03649)
+            custom float jw_translation_limit_max_rna = 0.03649
+            custom float jw_translation_limit_min_rna = 0.035529
+            custom double pxr:usd:physics:breakForce = inf
+            custom double pxr:usd:physics:breakTorque = inf
+            custom string pxr:usd:physics:joint:axis = "Z"
+            custom string pxr:usd:physics:joint:body0 = "body_01_obj_00"
+            custom string pxr:usd:physics:joint:body1 = "button_01_obj_00"
+            custom double pxr:usd:physics:joint:lowerLimit = -0.0009610019624233246
+            custom string pxr:usd:physics:joint:type = "prismatic"
+            custom double pxr:usd:physics:joint:upperLimit = 0
+            custom double3 pxr:usd:physics:localPos0 = (0.024250147864222527, -0.02147996984422207, 0.036490000784397125)
+            custom double3 pxr:usd:physics:localPos1 = (0, 0, 0)
+            custom double4 pxr:usd:physics:localRot0 = (1, 0, 0, 0)
+            custom double4 pxr:usd:physics:localRot1 = (1, 0, 0, 0)
+            float3 xformOp:rotateXYZ = (0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.024250147864222527, -0.02147996984422207, 0.036490000784397125)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+        }
+
+        def Xform "button_04_joint_00" (
+            prepend apiSchemas = ["CollectionAPI:button_04_joint_00"]
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "button_04_joint_00"
+            rel collection:button_04_joint_00:includes = </RootNode/Geometry/button_04_obj_00>
+            custom float3 jw_translation_default = (0.024250166, 0.0214789, 0.036490116)
+            custom float jw_translation_limit_max_rna = 0.03649
+            custom float jw_translation_limit_min_rna = 0.035529
+            custom double pxr:usd:physics:breakForce = inf
+            custom double pxr:usd:physics:breakTorque = inf
+            custom string pxr:usd:physics:joint:axis = "Z"
+            custom string pxr:usd:physics:joint:body0 = "body_01_obj_00"
+            custom string pxr:usd:physics:joint:body1 = "button_04_obj_00"
+            custom double pxr:usd:physics:joint:lowerLimit = -0.0009611174464225769
+            custom string pxr:usd:physics:joint:type = "prismatic"
+            custom double pxr:usd:physics:joint:upperLimit = -1.1548399925231934e-7
+            custom double3 pxr:usd:physics:localPos0 = (0.02425016649067402, 0.02147890068590641, 0.03649011626839638)
+            custom double3 pxr:usd:physics:localPos1 = (0, 0, 0)
+            custom double4 pxr:usd:physics:localRot0 = (1, 0, 0, 0)
+            custom double4 pxr:usd:physics:localRot1 = (1, 0, 0, 0)
+            float3 xformOp:rotateXYZ = (0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.02425016649067402, 0.02147890068590641, 0.036490000784397125)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+        }
+
+        def Xform "body_01_joint_00" (
+            prepend apiSchemas = ["CollectionAPI:body_01_joint_00"]
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "body_01_joint_00"
+            rel collection:body_01_joint_00:includes = </RootNode/Geometry/body_01_obj_00>
+        }
+
+        def Xform "Empty_joint_00" (
+            prepend apiSchemas = ["CollectionAPI:Empty_joint_00"]
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "Empty_joint_00"
+            rel collection:Empty_joint_00:includes = </RootNode/Geometry/clip_01_obj_00>
+            float3 xformOp:rotateXYZ = (0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (-0.0027070045471191406, -0.0817345678806305, 0.006498388014733791)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+        }
+
+        def Xform "button_02_joint_00" (
+            prepend apiSchemas = ["CollectionAPI:button_02_joint_00"]
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "button_02_joint_00"
+            rel collection:button_02_joint_00:includes = </RootNode/Geometry/button_02_obj_00>
+            custom float3 jw_translation_default = (0.024250165, -0.007096816, 0.036490142)
+            custom float jw_translation_limit_max_rna = 0.03649
+            custom float jw_translation_limit_min_rna = 0.035529
+            custom double pxr:usd:physics:breakForce = inf
+            custom double pxr:usd:physics:breakTorque = inf
+            custom string pxr:usd:physics:joint:axis = "Z"
+            custom string pxr:usd:physics:joint:body0 = "body_01_obj_00"
+            custom string pxr:usd:physics:joint:body1 = "button_02_obj_00"
+            custom double pxr:usd:physics:joint:lowerLimit = -0.0009611435234546661
+            custom string pxr:usd:physics:joint:type = "prismatic"
+            custom double pxr:usd:physics:joint:upperLimit = -1.4156103134155273e-7
+            custom double3 pxr:usd:physics:localPos0 = (0.02425016462802887, -0.007096815854310989, 0.03649014234542847)
+            custom double3 pxr:usd:physics:localPos1 = (0, 0, 0)
+            custom double4 pxr:usd:physics:localRot0 = (1, 0, 0, 0)
+            custom double4 pxr:usd:physics:localRot1 = (1, 0, 0, 0)
+            float3 xformOp:rotateXYZ = (0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.02425016462802887, -0.007096815854310989, 0.036490000784397125)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+        }
+
+        def Xform "Empty_joint_01" (
+            prepend apiSchemas = ["CollectionAPI:Empty_joint_01"]
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "Empty_joint_01"
+            rel collection:Empty_joint_01:includes = </RootNode/Geometry/cap_01_obj_00>
+            float3 xformOp:rotateXYZ = (0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.0027950473595410585, -0.11664506793022156, 0.00651151267811656)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+        }
+
+        def Xform "button_03_joint_00" (
+            prepend apiSchemas = ["CollectionAPI:button_03_joint_00"]
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "button_03_joint_00"
+            rel collection:button_03_joint_00:includes = </RootNode/Geometry/button_03_obj_00>
+            custom float3 jw_translation_default = (0.024250152, 0.0070957444, 0.036490116)
+            custom float jw_translation_limit_max_rna = 0.03649
+            custom float jw_translation_limit_min_rna = 0.035529
+            custom double pxr:usd:physics:breakForce = inf
+            custom double pxr:usd:physics:breakTorque = inf
+            custom string pxr:usd:physics:joint:axis = "Z"
+            custom string pxr:usd:physics:joint:body0 = "body_01_obj_00"
+            custom string pxr:usd:physics:joint:body1 = "button_03_obj_00"
+            custom double pxr:usd:physics:joint:lowerLimit = -0.0009611174464225769
+            custom string pxr:usd:physics:joint:type = "prismatic"
+            custom double pxr:usd:physics:joint:upperLimit = -1.1548399925231934e-7
+            custom double3 pxr:usd:physics:localPos0 = (0.024250151589512825, 0.007095744367688894, 0.03649011626839638)
+            custom double3 pxr:usd:physics:localPos1 = (0, 0, 0)
+            custom double4 pxr:usd:physics:localRot0 = (1, 0, 0, 0)
+            custom double4 pxr:usd:physics:localRot1 = (1, 0, 0, 0)
+            float3 xformOp:rotateXYZ = (0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.024250151589512825, 0.007095744367688894, 0.036490000784397125)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+        }
+
+        def Xform "screen_01_joint_00" (
+            prepend apiSchemas = ["CollectionAPI:screen_01_joint_00"]
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "screen_01_joint_00"
+            rel collection:screen_01_joint_00:includes = </RootNode/Geometry/screen_01_obj_00>
+            custom float3 jw_rotation_default = (0, 0, 0)
+            custom float jw_rotation_limit_max_rna = 0
+            custom float jw_rotation_limit_min_rna = 0
+            custom double pxr:usd:physics:breakForce = inf
+            custom double pxr:usd:physics:breakTorque = inf
+            custom string pxr:usd:physics:joint:body0 = "body_01_obj_00"
+            custom string pxr:usd:physics:joint:body1 = "screen_01_obj_00"
+            custom string pxr:usd:physics:joint:type = "fixed"
+            custom double3 pxr:usd:physics:localPos0 = (0, 0, 0)
+            custom double3 pxr:usd:physics:localPos1 = (0, 0, 0)
+            custom double4 pxr:usd:physics:localRot0 = (1, 0, 0, 0)
+            custom double4 pxr:usd:physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def Xform "Empty_joint_02" (
+            prepend apiSchemas = ["CollectionAPI:Empty_joint_02"]
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "Empty_joint_02"
+            rel collection:Empty_joint_02:includes = </RootNode/Geometry/cap_02_obj_00>
+            float3 xformOp:rotateXYZ = (0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.002795047825202346, -0.1439935266971588, 0.00649546692147851)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+        }
+
+        def Xform "knob_01_joint_00" (
+            prepend apiSchemas = ["CollectionAPI:knob_01_joint_00"]
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "knob_01_joint_00"
+            rel collection:knob_01_joint_00:includes = </RootNode/Geometry/knob_01_obj_00>
+            custom float3 jw_rotation_default = (0, 0, 0)
+            custom float jw_rotation_limit_max_rna = 2.0071287
+            custom float jw_rotation_limit_min_rna = -2.0071287
+            custom double pxr:usd:physics:breakForce = inf
+            custom double pxr:usd:physics:breakTorque = inf
+            custom string pxr:usd:physics:joint:axis = "Z"
+            custom string pxr:usd:physics:joint:body0 = "body_01_obj_00"
+            custom string pxr:usd:physics:joint:body1 = "knob_01_obj_00"
+            custom double pxr:usd:physics:joint:lowerLimit = -115.00000433853141
+            custom string pxr:usd:physics:joint:type = "revolute"
+            custom double pxr:usd:physics:joint:upperLimit = 115.00000433853141
+            custom double3 pxr:usd:physics:localPos0 = (-0.008991589769721031, 0.000009714819498185534, 0.036522962152957916)
+            custom double3 pxr:usd:physics:localPos1 = (0, 0, 0)
+            custom double4 pxr:usd:physics:localRot0 = (1, 0, 0, 0)
+            custom double4 pxr:usd:physics:localRot1 = (1, 0, 0, 0)
+            float3 xformOp:rotateXYZ = (0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (-0.008991589769721031, 0.000009714819498185534, 0.036522962152957916)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+        }
+
+        def Xform "Empty_joint_03" (
+            prepend apiSchemas = ["CollectionAPI:Empty_joint_03"]
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "Empty_joint_03"
+            rel collection:Empty_joint_03:includes = </RootNode/Geometry/cables_01_obj_00>
+            float3 xformOp:rotateXYZ = (0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (-0.0045408704318106174, -0.23258139193058014, 0.005951527506113052)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+        }
+    }
+
+    def Scope "Grasp"
+    {
+    }
+
+    def Scope "PhysicsMaterials"
+    {
+        def Material "physics_mat_m_opaque__plastic__testingTool_multimeter_b01"
+        {
+        }
+
+        def Material "physics_mat_m_opaque__metal__testingTool_multimeter_b01"
+        {
+        }
+
+        def Material "physics_mat_m_trans__plastic__clean_a01"
+        {
+        }
+    }
+
+    def Scope "Joints"
+    {
+    }
+
+    def Scope "VisualMaterials"
+    {
+    }
+}
+

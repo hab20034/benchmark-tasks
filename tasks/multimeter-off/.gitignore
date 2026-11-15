@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.thumbs/
+logs/
+review_media/
+*.mp4
