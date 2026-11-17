@@ -16,5 +16,5 @@
   "reset_notes": "Reset the dial and both arms to their initial poses; reset the one-way lower stop to 0 degrees. Nothing is consumed. Use object_jitter=0 for the fixed layout, base seed 0, and the native derived reset seed 1415158438. Keep the meter secured and the leads/accessories in the supplied fixed layout.",
   "fidelity": "Original YAM station and NVIDIA visuals. Casing/leads are fixed; the underside fixture is abstract. The dial is a passive Z hinge with an ideal bearing and no casing contact. A software one-way stop enforces the CCW-only rule (0.5 deg backlash), not a stock meter feature. Convex collision and friction are approximate, not hardware-calibrated. Turning uses finger contact, without a motor or grasp weld. Buttons, display, electronics, cable flex and detents are not simulated.",
   "scores": "Dream-1 recorded attempt: 0.0 when rounded (raw endpoint task_score 3.653309948503014e-10), scored by post-hoc replay of 1,014 recorded applied actions after manual interruption; the original aggregate score is unavailable. Scripted demonstration: 1.0, native success termination after 352 actions.",
-  "media": "M-8QMG2H"
+  "media": "M-MNCZJA"
 }
