@@ -63,10 +63,10 @@ PIVOT_LOCAL = (-0.00899158977, 0.000009714819498, 0.03652296215)
 PIVOT_WORLD = ORIGIN + ROTATION @ np.array(PIVOT_LOCAL)
 
 MULTIMETER = LocalUsdAsset(
-    "multimeter_body", pos=tuple(ORIGIN), yaw=YAW, usd_path=str(ASSETS / "dial_body.usda"),
+    "multimeter_body", pos=tuple(ORIGIN), yaw=YAW, usd_path=str(ASSETS / "multimeter_body.usd"),
 )
 DIAL = LocalUsdAsset(
-    "dial", pos=tuple(ORIGIN), yaw=YAW, usd_path=str(ASSETS / "dial_rotor.usda"), mass=0.004559,
+    "dial", pos=tuple(ORIGIN), yaw=YAW, usd_path=str(ASSETS / "multimeter_dial.usd"), mass=0.004559,
     hinge=Hinge(pivot=PIVOT_LOCAL, upper_degrees=OFF_DEGREES),
     collision_filter=("multimeter_body",), friction=(2.0, 1.5),
 )

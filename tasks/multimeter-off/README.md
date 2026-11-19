@@ -11,6 +11,13 @@ manipulation task, not an electrical continuity test.
 They load in memory after Isaac Sim starts and do not edit or install native environment
 files. Preserve the complete `assets/` directory. No environment patch is needed.
 
+## Asset packaging
+
+The submission is below 25 MB: body and dial are flattened binary USD files
+with one shared set of 2048 x 2048 PNG textures and the required MDL materials.
+Original mesh geometry, collision settings, poses, hinge and policy code are preserved.
+The NVIDIA asset license is retained at `assets/LICENSE.txt`.
+
 ## Run and score
 
 Use the challenge's existing `yam_arena`, Inspect Robots and Dream-1 environment. These
