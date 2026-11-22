@@ -14,5 +14,5 @@
   "run_limit": "2,400 control steps (120 simulated seconds at 20 Hz); the scripted demo completes within the same allowance.",
   "reset_notes": "Reset restores the deterministic shallow insertion, closed lever and initial robot poses. No electricity, consumables or electrical measurement is simulated. Use object_jitter=0.",
   "fidelity": "Original WAGO-style geometry, not official CAD. Real-scale housing and strip length; rigid solid-core wire and fixed reference port. Lever and sliding jaw are passive, coupled by an ideal unilateral cam constraint. Clamp force, friction and tool geometry are uncalibrated approximations. The tool is wrist-mounted; wire retention is contact/friction with no grasp weld or pose teleport. No flexible cable, calibrated pull test or electrical resistance model.",
-  "scores": "Dream-1 recording pending; scripted demo: 1.0 (864 control steps, native success termination)."
+  "scores": "Dream-1 (dreamlabs/dream-1-beta): 0 after 2400 control steps, ending at max_steps without execution errors; scripted demo: 1.0 after 864 control steps, ending on success."
 }

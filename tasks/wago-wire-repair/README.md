@@ -14,6 +14,11 @@ Both arms then retreat concurrently before the left tool closes the lever.
 
 ## Run
 
+Validated with Python 3.12, Isaac Sim 6.1 and the Isaac Lab 3 PhysX backend
+(`isaaclab_physx`), using YAM source commit
+`0059d02a1a91bc6834c1d0846022891df0c78730`. The validated path uses GPU
+PhysX (`device=cuda:0`, the default). Native YAM source files are unchanged.
+
 Use the existing YAM/Isaac Lab environment. From this task folder:
 
 ```bash
@@ -126,24 +131,29 @@ over the preceding 0.5 seconds. Rotation about the round wire’s own axis
 is irrelevant to this goal. A calibrated pull-force
 test is not implemented.
 
-Local validation after the concurrent holding and farther-back grasp update:
-one deterministic GPU scripted run (`object_jitter=0`,
-20 Hz control) completed with native `task_score=1.0` and termination
-`success`. The recorded action sequence lasts about 43 seconds. Contact diagnostics
-confirmed continuous left-tool/lever contact during withdrawal and insertion,
-with both right fingertips gripping the wire and no measured arm-to-arm
-contacts above 0.1 N in that interval. Live
-simulation is slower than real time; no real-time performance is claimed.
-This is a single-run functional check, not a multi-seed benchmark.
-The recorded concurrent scripted trial reached 1.0 after 864 control steps
-(43.2 simulated seconds), taking 443.7 seconds wall time on an RTX 5080
-with diagnostic contacts and an extra close-up camera. Runtime depends on
-camera settings and other running simulations. Budget approximately 15–30 minutes
-for a full 2,400-step Dream trial, plus model latency; this is an estimate,
-not a real-time guarantee.
-A 96-step Dream smoke test completed without errors, with two real model
-requests after the 32-step preroll (64 model-controlled steps). Its score
-was 0.0 at this short limit; Dream task completion has not been established.
+## Validation
+
+Fixed layout (`object_jitter=0`), 20 Hz control, existing GPU environment:
+
+| Policy | Native score | Control steps | Termination | Wall time |
+| --- | --- | --- | --- | --- |
+| Scripted concurrent demo | 1.0 | 864 (43.2 s simulated) | success | 443.7 s |
+| Dream-1 (`dreamlabs/dream-1-beta`) | 0 | 2400 (120 s simulated) | max_steps | 1138.1 s |
+
+The full Dream run executed 50 real model requests (`dry_run=false`), with
+no execution errors; it did not complete the task. Both videos contain the
+complete recorded trial. The scripted recording has an additional diagnostic
+close-up; that view is not supplied to the policy.
+
+Scripted contact diagnostics confirmed continuous left-tool/lever contact
+during withdrawal and insertion, with both right fingertips gripping the wire
+and no measured arm-to-arm contacts above 0.1 N in that interval. The Python
+and USD files in this submission exactly match that successful demo.
+
+These are single-run functional checks, not a multi-seed benchmark or a
+real-time performance claim. Camera settings, other GPU workloads and model
+latency affect wall time. Media are uploaded separately to the task board;
+the uploader adds their ID to `task.json`.
 
 Original code and geometry in this folder are provided under the MIT license.
 WAGO is a third-party trademark; no endorsement is implied.
