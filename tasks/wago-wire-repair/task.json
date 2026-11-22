@@ -1,0 +1,18 @@
+{
+  "title": "Repair a shallow wire connection in a lever terminal",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bimanual",
+    "electrical assembly",
+    "lever terminal",
+    "wire rework"
+  ],
+  "instruction": "Hold the orange lever open with the left tool while the right gripper withdraws and fully reinserts the blue wire. Release the wire, close the lever and withdraw both arms.",
+  "context": "De-energized control-panel wiring rework: remove a shallow conductor insertion and reseat the stripped end before commissioning. This evaluates tool use and wire handling, not electrical qualification.",
+  "setup": "Original two-arm YAM station. A fixed 90 x 190 x 8 mm base and 20 x 25 x 30 mm pedestal hold a simplified two-port 13 x 18.3 x 8.15 mm lever terminal. One black reference lead and its lever are fixed. The active orange lever and metal spring jaw are passive moving bodies. The free blue solid-core lead is 120 mm long, 2.7 mm insulation diameter, 1.4 mm copper diameter, with an 11 mm stripped end initially inserted 3 mm. A rear rest supports its tail. The left wrist carries a fixed narrow fork tool with a visible orange collar; it is not picked up. A red/green geometric indicator is beside the terminal. All geometry and materials are original approximations; sizes and placement are detailed in README.",
+  "scoring": "Dropping the wire below the table scores 0. Partial credit: 0.15 for opening past 80 degrees; 0.15 for subsequently withdrawing the tip more than 1 mm outside the mouth; 0.35 for 10.3-12 mm insertion, tip lateral error below 0.8 mm and axis error below 6 degrees; 0.25 more for that seating with lever within 5 degrees of closed, jaw travel 1.1-1.8 mm and measured jaw-wire force above 0.02 N. Partial total is capped at 0.9. Full 1.0 requires all stages, both TCPs over 45 mm from the wire and pivot, tool tip over 25 mm from the pivot, and a two-second success hold; wire pose must remain within 0.2 mm translation and 1 degree axis change over a 0.5-second window. Axial spin is ignored for the round wire.",
+  "run_limit": "2,400 control steps (120 simulated seconds at 20 Hz); the scripted demo completes within the same allowance.",
+  "reset_notes": "Reset restores the deterministic shallow insertion, closed lever and initial robot poses. No electricity, consumables or electrical measurement is simulated. Use object_jitter=0.",
+  "fidelity": "Original WAGO-style geometry, not official CAD. Real-scale housing and strip length; rigid solid-core wire and fixed reference port. Lever and sliding jaw are passive, coupled by an ideal unilateral cam constraint. Clamp force, friction and tool geometry are uncalibrated approximations. The tool is wrist-mounted; wire retention is contact/friction with no grasp weld or pose teleport. No flexible cable, calibrated pull test or electrical resistance model.",
+  "scores": "Dream-1 recording pending; scripted demo: 1.0 (864 control steps, native success termination)."
+}
